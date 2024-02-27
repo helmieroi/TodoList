@@ -1,0 +1,7 @@
+<div class="container-login-form">
+    <form [formGroup]="applyForm" (submit)="onSubmit()">
+      <input type="text" formControlName="email" name="email" >
+      <input type="password"formControlName="password" name="password" >
+        <app-custom-button [label]="'Login'" [type]="'submit'" />
+    </form>
+</div>

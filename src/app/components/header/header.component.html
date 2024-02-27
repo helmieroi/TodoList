@@ -1,0 +1,31 @@
+<div ngbNav class="nav-tabs"
+           [class.ligth]="darkTheme"
+           [class.dark]="!darkTheme">
+    <div class="nav-left-item">
+        <ng-container ngbNavItem>
+            <div class="logo-text">LOGIN PAGE</div>  
+          </ng-container>
+          <ng-container ngbNavItem>
+            <div class="vertical-solid"> </div>
+          </ng-container> 
+    </div>
+     <div class="nav-right-item">  
+        <ng-container ngbNavItem>
+            <a href="#" class="nav-item">Home</a> 
+        </ng-container>  
+        <ng-container ngbNavItem> 
+            <a href="#" class="nav-item">About</a> 
+        </ng-container>
+        <ng-container ngbNavItem> 
+            <a href="#" class="nav-item">Services</a> 
+        </ng-container>
+        <ng-container ngbNavItem>
+             <a href="#" class="nav-item">Portfolio</a> 
+            </ng-container>
+        <ng-container ngbNavItem> 
+            <a (click)="toggleDarkTheme()" class="nav-item"><i class="bi bi-brightness-high-fill"></i></a> 
+        </ng-container>
+ 
+</div>
+  
+  </div>

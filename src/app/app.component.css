@@ -1,0 +1,46 @@
+.container{
+    display: block;
+    height: calc(100vh - 65px); 
+}
+ 
+.light {
+    /*************************
+       * background color   *
+     *************************/
+    --primary-background-color: #DDE5EC;
+    --secandary-backround-color: #FBFBFD;
+
+
+   /*************************
+        * Text color    *
+    *************************/
+    --primary-text-color: #06071A;
+
+
+    /**********************
+      * Border color     *           
+     **********************/
+     --primary-border-color: #DDE5EC;    
+     --secandary-border-color: #1574FF;   
+     
+}  
+
+.dark {
+    /*************************
+       * background color   *
+     *************************/
+    --primary-background-color: #06071A;
+    --secandary-backround-color: #1E1F31;
+
+
+   /*************************
+        * Text color    *
+    *************************/
+    --primary-text-color: #DDE5EC; 
+    /**********************
+      * Border color     *           
+     **********************/
+     --primary-border-color: #DDE5EC;    
+     --secandary-border-color: #1574FF;   
+     
+}  
