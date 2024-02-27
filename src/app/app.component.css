@@ -1,6 +1,8 @@
-.container{
+.root-container{
     display: block;
-    height: calc(100vh - 65px); 
+    height: calc(100vh - 63px); 
+    max-width: 100% !important;
+    background-color: var(--primary-background-color);
 }
  
 .light {
@@ -9,21 +11,37 @@
      *************************/
     --primary-background-color: #DDE5EC;
     --secandary-backround-color: #FBFBFD;
+    --secandary-button-backround-color: #001852;
+    --secandary-hover-button-backround-color: #1f39ff;
 
 
    /*************************
         * Text color    *
     *************************/
     --primary-text-color: #06071A;
+    --secandary-text-color: #DDE5EC;
 
 
     /**********************
       * Border color     *           
      **********************/
-     --primary-border-color: #DDE5EC;    
-     --secandary-border-color: #1574FF;   
+     --primary-border-color: #E9E9EC;    
+     --secandary-border-color: #1574FF;  
+     --soft-shadow-border-color: rgba(0, 0, 0, 0.2) 
+
+    /*********************************
+     *            shadow             * 
+     *********************************/
+    /************input**************/
+    --primary-shadow-input: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    /************hover**************/
+    --primary-hover-shadow-button:0px 0px 10px rgba(0, 0, 0, 0.3); 
+    /*************bloc**************/
+     --primary-shadow-bloc: 0px 0px 10px 10px rgba(0, 0, 0, 0.1);
+
      
-}  
+} 
 
 .dark {
     /*************************
@@ -31,16 +49,32 @@
      *************************/
     --primary-background-color: #06071A;
     --secandary-backround-color: #1E1F31;
+    --secandary-button-backround-color: #0043a5;
+    --secandary-hover-button-backround-color: #1574FF;
 
 
    /*************************
         * Text color    *
     *************************/
     --primary-text-color: #DDE5EC; 
+    --secandary-text-color: #DDE5EC;
     /**********************
       * Border color     *           
      **********************/
      --primary-border-color: #DDE5EC;    
      --secandary-border-color: #1574FF;   
+     --soft-shadow-border-color: rgba(255, 255, 255, 0.2);
+
+    /*********************************
+     *            shadow             * 
+     *********************************/
+    /************input**************/
+
+        --primary-shadow-input:0 2px 4px rgba(255, 255, 255, 0.1); 
+    /************hover**************/
+        --primary-hover-shadow-button:0px 0px 10px rgba(255, 255, 255, 0.3);
+    /*************bloc**************/
+        --primary-shadow-bloc:0px 0px 10px 10px rgba(231, 228, 228, 0.1);
+
      
 }  

@@ -1,7 +1,12 @@
-<div class="container-login-form">
-    <form [formGroup]="applyForm" (submit)="onSubmit()">
-      <input type="text" formControlName="email" name="email" >
-      <input type="password" formControlName="password" name="password" >
+<div class="container-login">
+  <div class="sub-container-login">
+    <div class="root-container">
+      <form [formGroup]="applyForm" (submit)="onSubmit()" class="login-form">
+        <app-custom-input [label]="'Email *'" [type]="'email'" [name]="'email'" [formControlName]="'email'" />
+
+        <app-custom-input [label]="'Possword *'" [type]="'password'" [name]="'password'" [formControlName]="'password'" />
         <app-custom-button [label]="'Login'" [type]="'submit'" />
-    </form> 
+      </form>
+    </div>
+  </div>
 </div>

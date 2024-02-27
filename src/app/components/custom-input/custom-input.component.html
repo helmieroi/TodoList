@@ -1,0 +1,18 @@
+<div 
+    class="{{classRoot}}">
+<label 
+   class="root {{labelClass}}" 
+   id="{{labelId}}"
+
+>{{ label }}</label>
+<input  type="{{type}}" 
+        class="root {{class}}"
+        value="{{value}}"
+        required="{{required}}" 
+        id="{{id}}" 
+        name="{{name}}"   
+        [ngModel]="value"
+        (ngModelChange)="onChange($event)"
+        />
+
+</div>

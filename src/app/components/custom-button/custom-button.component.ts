@@ -13,5 +13,5 @@ ngOnInit(): void {
 } 
 @Input() label: string = "Validate";
 @Input() type: string = 'button'; 
-@Input() class : string = "btn btn-outline-success me-2";
+@Input() class : string = "";
 }

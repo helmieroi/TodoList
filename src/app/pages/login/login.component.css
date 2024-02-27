@@ -1,0 +1,44 @@
+.container-login { 
+  width: 100%;
+
+} 
+.sub-container-login {
+    top: 64px;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 68px);
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.root-container{ 
+    padding: 55px;
+    border: 1px solid var(--soft-shadow-border-color);
+    box-shadow: var(--primary-shadow-bloc);
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+@media screen and (min-width: 1400px) {
+    /* CSS styles to be applied to .root-container when the screen width is 600px or wider */
+    .root-container {    
+        min-width: 600px;
+        max-width: 750px;
+    }
+  }
+  @media screen and (max-width: 300px) {
+    /* CSS styles to be applied to .root-container when the screen width is 300px or < */
+    .root-container {    
+        min-width: 200px;
+        max-width: 250px;
+    }
+  }
+ 
+.login-form{
+    width: 100%;
+}

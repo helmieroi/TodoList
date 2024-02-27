@@ -1,8 +1,10 @@
-  <div id="root"  
+  <div id="root"
       [class.light]="!darkTheme"
       [class.dark]="!!darkTheme" >
   <app-header ></app-header>
-  <div class="container">
-    <router-outlet></router-outlet>  
+  <div class="root-container">
+    <div class="container" height="100%">
+      <router-outlet></router-outlet>  
+    </div>
   </div>
-</div>
+</div> 

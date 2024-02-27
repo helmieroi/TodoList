@@ -1,0 +1,15 @@
+
+.root{
+    margin: 25px 0px 0px 0px !important;
+    width: 100%;  
+    color: var(--secandary-text-color);
+    padding: 10px 22px;
+    background: var(--secandary-button-backround-color);
+    border: var(--secandary-border-color);
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+  
+}
+.root:hover{ 
+    background: var(--secandary-hover-button-backround-color);
+  }
