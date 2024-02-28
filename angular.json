@@ -1,15 +1,21 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
-  "cli": {
-    "packageManager": "npm",
-    "analytics": "36293b80-771a-4b33-ae42-86df94e0c478"
-  },
   "newProjectRoot": "projects",
   "projects": {
-    "TodoList": {
+    "myapp": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:component": {
+          "standalone": false
+        },
+        "@schematics/angular:directive": {
+          "standalone": false
+        },
+        "@schematics/angular:pipe": {
+          "standalone": false
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -17,7 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/todo-list",
+            "outputPath": "dist/myapp",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -28,11 +34,11 @@
               "src/favicon.ico",
               "src/assets"
             ],
-            "styles": [
-              "@angular/material/prebuilt-themes/indigo-pink.css",
-              "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "node_modules/bootstrap-icons/font/bootstrap-icons.css",
-              "src/app/theme/theme.css", 
+            "styles": [  
+            "node_modules/bootstrap/dist/css/bootstrap.min.css",
+            "node_modules/bootstrap-icons/font/bootstrap-icons.css",
+            "src/app/theme/theme.css", 
+            
               "src/styles.css"
             ],
             "scripts": [],
@@ -70,10 +76,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "TodoList:build:production"
+              "buildTarget": "myapp:build:production"
             },
             "development": {
-              "buildTarget": "TodoList:build:development"
+              "buildTarget": "myapp:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -81,7 +87,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "TodoList:build"
+            "buildTarget": "myapp:build"
           }
         },
         "test": {
@@ -98,12 +104,15 @@
             ],
             "styles": [
               "@angular/material/prebuilt-themes/indigo-pink.css",
-              "src/styles.css"
+               "src/styles.css"
             ],
             "scripts": []
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "500fd2b3-cb26-458b-a93d-cb15b55006fb"
   }
 }

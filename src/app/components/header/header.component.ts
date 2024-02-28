@@ -1,11 +1,8 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { NgbDropdownModule, NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
+import { Component, Input, OnInit } from '@angular/core'; 
 import { Router } from '@angular/router';
 import { ThemeService } from '../../theme/theme.service';
 @Component({
-  selector: 'app-header',
-  standalone: true,
-  imports: [NgbNavModule, NgbDropdownModule],
+  selector: 'app-header', 
   templateUrl: './header.component.html',
   styleUrl: './header.component.css',
 }) 

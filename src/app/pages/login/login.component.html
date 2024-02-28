@@ -1,11 +1,12 @@
 <div class="container-login">
   <div class="sub-container-login">
     <div class="root-container">
-      <form [formGroup]="applyForm" (submit)="onSubmit()" class="login-form">
-        <app-custom-input [label]="'Email *'" [type]="'email'" [name]="'email'" [formControlName]="'email'" />
+      <img [src]="imageUrl" alt="Login Image" class="login-image"/>
 
-        <app-custom-input [label]="'Possword *'" [type]="'password'" [name]="'password'" [formControlName]="'password'" />
-        <app-custom-button [label]="'Login'" [type]="'submit'" />
+      <form [formGroup]="applyForm" (submit)="onSubmit()"  class="login-form">
+        <app-custom-input label="Email" type="email"  [name]="'email'" [formControlName]="'email'"  />
+        <app-custom-input label="Password" type="password"  [name]="'password'" [formControlName]="'password'" ></app-custom-input>
+        <app-custom-button [label]="'Login'" [type]="'button'" (click)="onSubmit()"  /> 
       </form>
     </div>
   </div>
